@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidential Profile</title>
+</head>
+<body>
+    <style>
+
+        .flexbox-container{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            
+        }
+        [type='radio']
+        {
+            margin: 10px 5px 10px 30px;
+        }
+        #border-my-pic{
+           
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;   
+            border-radius: 50%;}
+            
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right:auto;
+            text-align: center;
+            flex: 1 1 222%;
+
+        }
+
+        }
+        .silver-background{
+            background-color: red;
+            margin: 20px 20px 20px 20px;
+            padding: 1.5em;   
+            background-color: gray;
+        }
+        .thick-green-border{
+
+            text-align: center;
+            border-color: lightgreen;
+            align-content: center;
+        }
+        .float-img{
+            float: left;
+            margin: 10px;
+        }
+        
+        }
+
+        p {font-family: Lobster;}
+        p{color: teal;}
+        .red-text{
+            text-align: center;
+            color:red;
+            font-size: 30px;
+            font-family: Lobster, monospace;
+        }
+    </style>
+    <h1 class="thick-green-border red-text" style="color:green;" >Please be careful when accessing my information</h1>
+    <p class="red-text silver-background">As it might blow you away!</p>
+</body> 
+<hr>
+<div>
+
+    <p class="center" title="Thanks for visiting here!"> Here we would look at the most amazing profile</p>
+    <tooltip></tooltip>
+
+    <p class="center">I am your host and my name is Kunal Mehta! Please don't be shocked that's not Tom Cruise but me XD</p>
+
+    <img id="border-my-pic" class=" center thick-green-border" title ="Thanks for hovering" src = "kunal.jpeg"  alt="My pic(Don't I look like Tom Cruise(JK))" height= 300" width="300">
+
+
+<h2 class="center">Let me take you through my life story!</h2>
+<p class="center">But before that take a look at this so that you don't get bored and run away</p>
+<img class="  flexbox-container" title ="GSoC" src = "GSOC_logo.jpg"  height= 100" width="200">
+
+<ul>
+
+<p class = 'flexbox-container'>    <a href="https://github.com/orcasound/orcaal-research"> Research behind the Active Learning Tool </a></br></p></li>
+<p class="flexbox-container">    <a href="orcasound.github.io/orcaal/"> Here comes the Active Learning Tool built by Diego and me(my GSoC partner)!</a></br></p></li>
+
+</ul>
+<p>But this is not how the story begin!</p>
+
+<form action="server.php">
+    <fieldset>
+        <legend>Feedbacks:</legend>
+        First Name:
+        <br>
+        <input type="text" name="firstname" value="" placeholder="Frist Name"><br>
+        
+        Last Name:
+        <br>
+        <input type="text" name="lastname" value="" placeholder="Last Name"><br>
+        
+        <br>Was the website good
+        <input type="radio" name="options">Yes
+        <input type="radio" name="options">No 
+
+        
+        
+        <br>
+        <input type="text" name="feedback" value="" placeholder="Please add your feedback! Thank you!"><br>
+
+        <br>
+        <input type="submit" value="submit">
+        
+
+    </fieldset>
+</form>
+</div>
+</html>
